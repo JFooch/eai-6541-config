@@ -1,2 +1,3 @@
 app:
   name: FDIR-dev
+api-key: ${{ secrets.SECRET_API_KEY }}
