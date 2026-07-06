@@ -1,11 +1,11 @@
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v4
 
-      - name: Create settings file
-        env:
-          TEST: ${{ secrets.SECRET_API_KEY }}
-        run: |
-          envsubst < application-dev.yml > setup.yml
+#      - name: Create settings file
+env:
+  TEST: ${{ secrets.SECRET_API_KEY }}
+#        run: |
+#          envsubst < application-dev.yml > setup.yml
